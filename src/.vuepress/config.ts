@@ -4,7 +4,7 @@ import theme from "./theme.js";
 
 const patterns = ['**/*.md', '!.vuepress', '!node_modules'];
 if (process.env.NODE_ENV === "production") {
-  patterns.push("!**/*_snip.md"); // 生产环境不显示草稿, 或者设置dir.index: false 不显示草稿
+  patterns.push("!**/*_snip.md"); // 生产环境不显示草稿, 或者设置index: false 不显示草稿
 }
 
 
