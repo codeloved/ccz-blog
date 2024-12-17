@@ -7,10 +7,4 @@ export default sidebar({
 
   // web相关侧边栏设置
   "/blog/web/react/": "structure",
-
-  // 主页相关侧边栏设置
-  // "/": [
-  //   "",
-  //   "intro" /* /intro.html */,
-  // ],
 });

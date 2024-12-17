@@ -1,5 +1,6 @@
 ---
 title: "python 字符串"
+article: false
 dir:
   order: 1
 ---
