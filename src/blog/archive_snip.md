@@ -1,5 +1,6 @@
 ---
 article: false
+index: false # 不在侧边栏展示
 ---
 https://codeloved.github.io/ccz-blog/
 node 要求 v18+
