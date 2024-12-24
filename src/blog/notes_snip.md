@@ -1,6 +1,7 @@
 ---
 title: 常用功能笔记
 article: false # 不在首页文章列表页展示
+index: false # 不在侧边栏展示
 ---
 
 # 常用功能笔记

@@ -18,4 +18,6 @@ markdown 扩展2 https://theme-hope.vuejs.press/zh/guide/intro/markdown.html#mar
 
 博客主题相关配置: https://theme-hope.vuejs.press/zh/guide/blog/intro.html
 
+operation:config:propertySite
 
+/operationCenter/propertymentConfig/propertySiteManage
