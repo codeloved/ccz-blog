@@ -1,8 +1,7 @@
 ---
-title: "python 字符串"
+title: "字符串"
 article: false
-dir:
-  order: 1
+order: 2
 ---
 
 ## Python String Methods Snippet

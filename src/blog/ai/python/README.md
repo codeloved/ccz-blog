@@ -1,4 +1,5 @@
 ---
 title: Python
 ---
-# Python相关
+
+- [Env](/ccz-blog/blog/ai/python/env)

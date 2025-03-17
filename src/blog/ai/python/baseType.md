@@ -1,7 +1,6 @@
 ---
-title: Python基础数据类型
-dir:
-  index: false
+title: 基础数据类型
+order: 3 # 文章排序,越大越靠后
 ---
 
 ## 整数

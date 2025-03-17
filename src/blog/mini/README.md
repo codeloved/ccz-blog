@@ -1,0 +1,2 @@
+1.自己的登录状态, 查自己的库,不需要在意session是否过期
+2.需要session的操作先checkseesion,刷新session,防止seession_id过期

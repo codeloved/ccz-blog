@@ -1,3 +1,5 @@
 ---
-title: Flask开发
+title: Flask
 ---
+
+- [WSGI](/ccz-blog/blog/ai/flask/wsgi)
