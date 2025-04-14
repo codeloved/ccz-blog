@@ -29,6 +29,12 @@ export default navbar([
         prefix: "/blog/web/react/",
         children: []
       },
+      {
+        text: "javaScript",
+        link: "/blog/web/js/",
+        prefix: "/blog/web/js/",
+        children: []
+      },
     ]
   },
 ]);
