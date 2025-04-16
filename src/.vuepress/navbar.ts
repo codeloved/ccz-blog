@@ -37,4 +37,16 @@ export default navbar([
       },
     ]
   },
+  {
+    text: "工具",
+    prefix: "/blog/tools/",
+    children: [
+      {
+        text: "git",
+        link: "/blog/tools/git/",
+        prefix: "/blog/tools/git/",
+        children: []
+      }
+    ]
+  },
 ]);

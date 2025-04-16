@@ -8,4 +8,7 @@ export default sidebar({
   // web相关侧边栏设置
   "/blog/web/react/": "structure",
   "/blog/web/js/": "structure",
+
+  // tools相关侧边栏设置
+  "/blog/tools/git/": "structure",
 });
