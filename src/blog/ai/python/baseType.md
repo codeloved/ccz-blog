@@ -1,75 +1,61 @@
 ---
-title: 基础数据类型
-order: 3 # 文章排序,越大越靠后
+title: "数据类型" # 文章标题,用于生成侧边栏目录名称
+article: true # 不在首页文章列表页展示
+index: true # 不在侧边栏展示
+order: 2 # 文章排序,越大越靠后
 ---
 
-## 整数
-整数类型是数值类型，表示整数值。整数类型可以是有符号的或无符号的，具体取决于数字的大小。
+## 基本数据类型
 
-Python支持四种不同的整数类型：
+### 背景
+由于不同的项目需要不同的python版本, 并且依赖的第三方库版本也不相同, 因此需要配置不同的python环境.python虚拟环境(venv)可以帮助我们管理不同项目的python环境, 避免不同项目之间版本冲突.
 
-- `int`：有符号的整型，范围是负无穷到正无穷。
-- `long`：长整型，范围是负无穷到正无穷。
-- `bool`：布尔型，只有两个值True和False。
-- `complex`：复数类型，由实数部分和虚数部分构成。
+### 常用配置方法
 
-  ## 浮点数
+#### pyenv
+pyenv是一个python版本管理工具, 可以帮助我们管理不同python版本.
+- 安装
+```bash
+brew install pyenv
+```
+- 配置(.zshrc)
+添加配置到.zshrc文件中
+```bash
+export PYENV_ROOT=/usr/local/var/pyenv
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/shims:$PATH"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+```
+- 重启终端或者重新载入配置
+```bash
+source ~/.zshrc
+```
+|命令|描述|
+|:---|:---|
+|pyenv --version|查看 pyenv 的版本|
+|pyenv versions|查看已安装的python版本|
+|pyenv install -l|显示可以安装的版本列表|
+|pyenv install 版本号|安装指定版本的python|
+|pyenv rehash|更新pyenv的内部环境变量, 安装指定版本的python后需要执行此命令|
+|pyenv global 版本号|设置全局python版本|
+|pyenv local|设置当前目录的python版本, 会在当前目录创建 .python-version 文件，并记录设置的 python 环境|
+|pyenv shell 版本号|更改当前 shell 下使用的 python 版本，临时生效，优先级高于 global|
 
-  浮点数类型是数值类型，表示小数值。浮点数类型可以是单精度或双精度，具体取决于系统的浮点数支持。
-
-  Python支持两种不同的浮点数类型：  
-
-  - `float`：单精度浮点数，范围是`-3.4e38`到`3.4e38`。
-  - `double`：双精度浮点数，范围是`-1.7e308`到`1.7e308`。
-
-  ## 字符串
-
-  字符串类型是序列类型，表示一系列字符。字符串类型可以是单引号或双引号括起来的任意文本。
-
-  Python支持两种不同的字符串类型：
-
-  - `str`：字符串类型，由任意序列的字符组成。
-  - `unicode`：Unicode字符串类型，由任意序列的Unicode字符组成。
-
-  ## 列表
-
-  列表类型是序列类型，表示一系列元素。列表类型可以包含任意类型的元素，可以是不同类型的元素。
-
-  Python支持两种不同的列表类型：
-
-  - `list`：列表类型，由任意序列的元素组成。
-  - `tuple`：元组类型，由任意序列的元素组成，元素不能修改。  
-
-  ## 字典
-  字典类型是映射类型，表示一系列键值对。字典类型可以包含任意类型的键和值，键必须是不可变类型，值可以是任意类型。
-
-  Python支持两种不同的字典类型：
-  - `dict`：字典类型，由任意序列的键值对组成。
-  - `set`：集合类型，由任意序列的元素组成，元素不能重复。
-  ## 元组
-  元组类型是序列类型，表示一系列元素。元组类型可以包含任意类型的元素，元素不能修改。
-
-  Python支持两种不同的元组类型：
-  - `tuple`：元组类型，由任意序列的元素组成。
-  - `namedtuple`：命名元组类型，由命名的元素组成。  
-
-  ## 集合
-  集合类型是无序集合类型，表示一系列元素。集合类型可以包含任意类型的元素，元素不能重复。
-
-  Python支持两种不同的集合类型：
-  - `set`：集合类型，由任意序列的元素组成。
-  - `frozenset`：冻结集合类型，由任意序列的元素组成，元素不能修改。  
-
-  ## 布尔值
-  布尔值类型只有两个值True和False。
-
-  Python支持两种不同的布尔值类型：
-  - `bool`：布尔值类型，只有两个值True和False。
-  - `None`：空值类型，表示空值。
-  ## 复数
-  复数类型由实数部分和虚数部分构成。
-
-  Python支持两种不同的复数类型：
-  - `complex`：复数类型，由实数部分和虚数部分构成。
-  - `numbers.Complex`：复数类型，由实数部分和虚数部分构成。  
+#### venv创建虚拟环境
+- 创建虚拟环境
+```bash
+mkdir myproject
+cd myproject
+python3 -m venv .venv
+```
+- 激活虚拟环境
+```bash
+source .venv/bin/activate
+# 或者 source 就是 . 语法
+. .venv/bin/activate
+```
+- 退出虚拟环境
+```bash
+deactivate
+```
 

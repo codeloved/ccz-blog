@@ -2,7 +2,7 @@
 title: "git简介" # 文章标题,用于生成侧边栏目录名称
 article: false # 不在首页文章列表页展示
 index: true # 不在侧边栏展示
-order: 0 # 文章排序,越大越靠后
+order: 1 # 文章排序,越大越靠后
 ---
 
 ## git介绍
@@ -79,5 +79,29 @@ order: 0 # 文章排序,越大越靠后
     git ->> ws: git checkout 文件名
   ```
 
-  ## git配置
-
+## git配置
+- git config \
+  可以给git配置变量, 变量存储在不同的位置.
+  - /etc/gitconfig 文件 \
+  包含系统上每一个用户的仓库的通用配置, 执行 git config 时带上 --system 选项，那么它就会读写该文件中的配置变量
+  - ~/.gitconfig 或 ~/.config/git/config 文件 \
+  包含当前用于的仓库配置, 执行 git config 时带上 --global 选项，那么它就会读写该文件中的配置变量
+  - 工作区的.git/config 文件 \
+  包含当前仓库的配置, 执行 git config 时不带任何选项或者--local，那么它就会读写该文件中的配置变量
+  - 使用方式: \
+  一般使用--global设置通用的配置(用户名,邮箱), 使用--local设置当前仓库的配置(用户名,邮箱等), 使用--system设置系统的配置.
+  - 优先级: \
+  --local > --global > --system
+- 配置方式: 
+  ```bash
+  # 设置全局用户名和邮箱
+  git config --global user.name "your name" 
+  git config --global user.email "your email"
+  # 设置当前仓库用户名和邮箱(在当前仓库目录下执行)
+  git config user.name "your name" 
+  git config user.email "your email"
+  # 查看配置信息
+  git config --list
+  git config user.name
+  git config user.email
+  ```
