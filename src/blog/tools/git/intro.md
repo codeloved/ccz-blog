@@ -2,7 +2,7 @@
 title: "git简介" # 文章标题,用于生成侧边栏目录名称
 article: false # 不在首页文章列表页展示
 index: true # 不在侧边栏展示
-order: 1 # 文章排序,越大越靠后
+order: 2 # 文章排序,越大越靠后
 ---
 
 ## git介绍
