@@ -40,3 +40,5 @@ rebase不好用,也可以用这个
 ## git pull
 
 # git push
+
+# git reflog

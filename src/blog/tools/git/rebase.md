@@ -5,7 +5,7 @@ index: true # 不在侧边栏展示
 order: 5 # 文章排序,越大越靠后
 ---
 
-## git变基 \
+## git变基 
 git 合并其他分支的修改3种方式<font color="red">merge</font> 、<font color="red">rebase</font>、<font color="red">cherry-pick</font>
 
 - 使用merge合并2个分支 \
