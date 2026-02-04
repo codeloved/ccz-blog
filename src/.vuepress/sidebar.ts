@@ -11,4 +11,7 @@ export default sidebar({
 
   // tools相关侧边栏设置
   "/blog/tools/git/": "structure",
+
+  // 前端相关侧边栏设置
+  "/blog/front/base/": "structure",
 });

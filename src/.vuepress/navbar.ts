@@ -9,15 +9,15 @@ export default navbar([
         text: "python基础",
         link: "/blog/ai/python/",
         prefix: "/blog/ai/python/",
-        children: []
+        children: [],
       },
       {
         text: "flask基础",
         link: "/blog/ai/flask/",
         prefix: "/blog/ai/flask/",
-        children: []
+        children: [],
       },
-    ]
+    ],
   },
   {
     text: "WEB开发",
@@ -27,15 +27,15 @@ export default navbar([
         text: "react",
         link: "/blog/web/react/",
         prefix: "/blog/web/react/",
-        children: []
+        children: [],
       },
       {
         text: "javaScript",
         link: "/blog/web/js/",
         prefix: "/blog/web/js/",
-        children: []
+        children: [],
       },
-    ]
+    ],
   },
   {
     text: "工具",
@@ -45,8 +45,20 @@ export default navbar([
         text: "git",
         link: "/blog/tools/git/",
         prefix: "/blog/tools/git/",
-        children: []
-      }
-    ]
+        children: [],
+      },
+    ],
+  },
+  {
+    text: "前端",
+    prefix: "/blog/front/",
+    children: [
+      {
+        text: "BASE",
+        link: "/blog/front/base/",
+        prefix: "/blog/front/base/",
+        children: [],
+      },
+    ],
   },
 ]);
